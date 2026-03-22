@@ -200,6 +200,10 @@ a {
   margin-bottom: 14px;
 }
 
+.section-heading .eyebrow {
+  color: var(--violet);
+}
+
 .hero h2 {
   font-size: clamp(2rem, 4vw, 3.45rem);
   line-height: 1.02;
