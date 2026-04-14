@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LernaPeople — Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="header">
+        <div class="brand">
+          <div class="brand__logo">L</div>
+          <div>
+            <p class="brand__caption">Платформа управления персоналом</p>
+            <h1>LernaPeople</h1>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav__link nav__link--active" href="#">Главная</a>
+          <a class="nav__link" href="#employees">Сотрудники</a>
+          <a class="nav__link" href="#tasks">Задачи</a>
+          <a class="nav__link" href="#learning">Обучение</a>
+          <a class="nav__link" href="#reports">Отчёты</a>
+          <a class="nav__link" href="#admin">Админ-панель</a>
+        </nav>
+
+        <div class="profile-chip">
+          <div class="profile-chip__avatar">ЕК</div>
+          <div>
+            <p class="profile-chip__name">Екатерина Крылова</p>
+            <button id="logout-button" class="profile-chip__button" type="button">Профиль · Выйти</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="hero panel">
+          <div>
+            <span class="eyebrow">Доброе утро, Екатерина!</span>
+            <h2>Управляйте задачами, обучением и событиями команды в одном окне.</h2>
+            <p class="hero__text">
+              Сегодня у вас 5 задач, 2 дня рождения и 1 активный обучающий курс. Все приоритеты и
+              показатели отдела собраны на главной странице.
+            </p>
+            <div class="hero__actions">
+              <button class="button button--primary" type="button">Открыть мои задачи</button>
+              <button class="button button--secondary" type="button">Посмотреть календарь</button>
+            </div>
+          </div>
+
+          <div class="hero__summary">
+            <div class="summary-card">
+              <span>Эффективность задач</span>
+              <strong>84%</strong>
+              <p>+6% к прошлому месяцу</p>
+            </div>
+            <div class="summary-card summary-card--accent">
+              <span>Команда онлайн</span>
+              <strong>39 / 47</strong>
+              <p>8 сотрудников вне офиса</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="metrics" aria-label="Ключевые метрики">
+          <article class="metric-card panel">
+            <span class="metric-card__icon">👥</span>
+            <div>
+              <p>Сотрудников</p>
+              <strong>47</strong>
+            </div>
+          </article>
+          <article class="metric-card panel">
+            <span class="metric-card__icon">📋</span>
+            <div>
+              <p>Активных задач</p>
+              <strong>12</strong>
+            </div>
+          </article>
+          <article class="metric-card panel">
+            <span class="metric-card__icon">🎓</span>
+            <div>
+              <p>В обучении</p>
+              <strong>8</strong>
+            </div>
+          </article>
+          <article class="metric-card panel">
+            <span class="metric-card__icon">📅</span>
+            <div>
+              <p>Дней рождений</p>
+              <strong>2 сегодня</strong>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <section class="panel shortcuts">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Быстрый доступ</span>
+                <h3>Основные разделы</h3>
+              </div>
+            </div>
+
+            <div class="shortcuts__grid">
+              <button class="shortcut-tile" type="button">📋<span>Мои задачи</span></button>
+              <button class="shortcut-tile" type="button">👤<span>Сотрудники</span></button>
+              <button class="shortcut-tile" type="button">🎓<span>Обучение</span></button>
+              <button class="shortcut-tile" type="button">📊<span>Отчёты</span></button>
+              <button class="shortcut-tile" type="button">✍️<span>Заявки</span></button>
+              <button class="shortcut-tile" type="button">📅<span>Календарь</span></button>
+            </div>
+          </section>
+
+          <section id="tasks" class="panel list-panel">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Фокус на сегодня</span>
+                <h3>Актуальные задачи</h3>
+              </div>
+              <a href="#" class="text-link">Все задачи</a>
+            </div>
+
+            <ul class="task-list">
+              <li class="task-list__item">
+                <label>
+                  <input type="checkbox" />
+                  <span>Согласовать отпуск Иванова</span>
+                </label>
+                <time datetime="2026-03-25">до 25.03</time>
+              </li>
+              <li class="task-list__item">
+                <label>
+                  <input type="checkbox" />
+                  <span>Заполнить табель за февраль</span>
+                </label>
+                <time datetime="2026-03-28">до 28.03</time>
+              </li>
+              <li class="task-list__item">
+                <label>
+                  <input type="checkbox" />
+                  <span>Провести вводный курс для новичка</span>
+                </label>
+                <time datetime="2026-03-20">начато 20.03</time>
+              </li>
+              <li class="task-list__item">
+                <label>
+                  <input type="checkbox" checked />
+                  <span>Подготовить отчёт по вовлечённости</span>
+                </label>
+                <time datetime="2026-03-24">до 24.03</time>
+              </li>
+            </ul>
+          </section>
+
+          <section class="panel events-panel">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Календарь</span>
+                <h3>Ближайшие события</h3>
+              </div>
+              <a href="#" class="text-link">Открыть всё</a>
+            </div>
+
+            <div class="event-list">
+              <article class="event-card event-card--birthday">
+                <p class="event-card__date">Сегодня</p>
+                <strong>Петров А. — день рождения</strong>
+                <span>Отдел продаж</span>
+              </article>
+              <article class="event-card">
+                <p class="event-card__date">10:00</p>
+                <strong>Планёрка HR-команды</strong>
+                <span>Конференц-зал / Meet</span>
+              </article>
+              <article class="event-card">
+                <p class="event-card__date">Завтра</p>
+                <strong>Сидорова М. — день рождения</strong>
+                <span>Финансовый отдел</span>
+              </article>
+              <article class="event-card event-card--learning">
+                <p class="event-card__date">27.03</p>
+                <strong>3 сотрудника завершают курс</strong>
+                <span>Адаптация новых сотрудников</span>
+              </article>
+            </div>
+          </section>
+
+          <section id="reports" class="panel analytics-panel">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Аналитика</span>
+                <h3>Выполнение задач и обучение</h3>
+              </div>
+            </div>
+
+            <div class="analytics-layout">
+              <div class="donut-card">
+                <div class="donut-chart" role="img" aria-label="84 процентов выполнения задач">
+                  <span>84%</span>
+                </div>
+                <p>Выполнение задач за месяц</p>
+              </div>
+
+              <div class="analytics-stats">
+                <div>
+                  <span>Завершено курсов</span>
+                  <strong>73%</strong>
+                  <small>34 из 47 сотрудников закрыли обучение вовремя</small>
+                </div>
+                <div>
+                  <span>Загруженность отдела</span>
+                  <strong>68%</strong>
+                  <small>Оптимальный уровень по текущей неделе</small>
+                </div>
+                <div>
+                  <span>Индекс вовлечённости</span>
+                  <strong>8.7 / 10</strong>
+                  <small>Рост после запуска программы наставничества</small>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <footer class="footer panel">
+        <div>
+          <strong>Техподдержка:</strong>
+          <a href="mailto:support@lerna.hr">support@lerna.hr</a>
+        </div>
+        <div><strong>Версия:</strong> 1.0.0</div>
+        <a href="#" class="text-link">Инструкция / Помощь</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
