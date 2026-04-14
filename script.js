@@ -85,7 +85,7 @@ const initAuthPage = () => {
 
     const isRegister = mode === 'register';
     formTitle.textContent = isRegister ? 'Придумайте:' : 'Войдите:';
-    submitButton.textContent = isRegister ? 'Зарегистрироваться' : 'Войти';
+    submitButton.textContent = isRegister ? 'Создать аккаунт' : 'Войти';
 
     errorBox.textContent = '';
     successBox.textContent = '';

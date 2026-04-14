@@ -567,12 +567,12 @@ a {
 
 .auth-brand {
   position: absolute;
-  top: 26px;
-  left: 30px;
+  top: 24px;
+  right: 32px;
   margin: 0;
   font-family: var(--font-heading);
   color: var(--violet-dark);
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
   font-weight: 700;
 }
 
@@ -662,6 +662,11 @@ a {
   justify-content: center;
 }
 
+.auth-submit--accent {
+  background: var(--violet);
+  color: #fff;
+}
+
 .auth-submit--outline {
   border: 1px solid rgba(83, 30, 150, 0.28);
   background: rgba(113, 58, 224, 0.08);
@@ -671,7 +676,7 @@ a {
 @media (max-width: 640px) {
   .auth-brand {
     top: 18px;
-    left: 18px;
+    right: 18px;
   }
 
   .auth-card {
